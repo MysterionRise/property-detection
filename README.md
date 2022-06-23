@@ -7,4 +7,4 @@
 - https://flutter.dev/multi-platform/desktop
 - https://www.electronjs.org/docs/latest/tutorial/quick-start
 
-### Need to support auto-generate of questionaire from Excel/CSV spreadsheet
+### Need to support auto-generate of questionaire from Excel/CSV spreadsheet with timing of the answers
