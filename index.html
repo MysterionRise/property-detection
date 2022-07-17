@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Тест</title>
-  </head>
-  <body>
-    <h3>Оцените выраженность следующих признаков в отношении к краснооранжевому новому плоду в форме цветка?</h3>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h3 id="questionText">Текст инструкции</h3>
+<div id="questionnaire" hidden="true">
+    <table lay>
+        <tr>
+            <th></th>
+            <th>1 (слабо выражен)</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7 (сильно выражен)</th>
+        </tr>
+        <tr>
+            <td><span id="question1"/></td>
+            <td><input type="radio" id="q1_1" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_2" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_3" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_4" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_5" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_6" value="1" name="q1"></td>
+            <td><input type="radio" id="q1_7" value="1" name="q1"></td>
+        </tr>
+        <tr>
+            <td><span id="question2"/></td>
+            <td><input type="radio" id="q2_1" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_2" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_3" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_4" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_5" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_6" value="1" name="q2"></td>
+            <td><input type="radio" id="q2_7" value="1" name="q2"></td>
+        </tr>
+        <tr>
+            <td><span id="question3"/></td>
+            <td><input type="radio" id="q3_1" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_2" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_3" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_4" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_5" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_6" value="1" name="q3"></td>
+            <td><input type="radio" id="q3_7" value="1" name="q3"></td>
+        </tr>
+        <tr>
+            <td><span id="question4"/></td>
+            <td><input type="radio" id="q4_1" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_2" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_3" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_4" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_5" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_6" value="1" name="q4"></td>
+            <td><input type="radio" id="q4_7" value="1" name="q4"></td>
+        </tr>
+        <tr>
+            <td><span id="question5"/></td>
+            <td><input type="radio" id="q5_1" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_2" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_3" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_4" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_5" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_6" value="1" name="q5"></td>
+            <td><input type="radio" id="q5_7" value="1" name="q5"></td>
+        </tr>
+        <tr>
+            <td><span id="question6"/></td>
+            <td><input type="radio" id="q6_1" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_2" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_3" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_4" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_5" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_6" value="1" name="q6"></td>
+            <td><input type="radio" id="q6_7" value="1" name="q6"></td>
+        </tr>
+        <tr>
+            <td><span id="question7"/></td>
+            <td><input type="radio" id="q7_1" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_2" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_3" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_4" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_5" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_6" value="1" name="q7"></td>
+            <td><input type="radio" id="q7_7" value="1" name="q7"></td>
+        </tr>
+    </table>
 
-    <ul style="list-style: none;">
-      <li>
-        <span id="question1"></span>
-        <input type="radio" id="q1_1" value="1" name="q1">
-        <input type="radio" id="q1_2" value="2" name="q1">
-        <input type="radio" id="q1_3" value="3" name="q1">
-        <input type="radio" id="q1_4" value="4" name="q1">
-        <input type="radio" id="q1_5" value="5" name="q1">
-        <input type="radio" id="q1_6" value="6" name="q1">
-        <input type="radio" id="q1_7" value="7" name="q1">
-      </li>
-      <br>
-      <li>
-        <span id="question2"></span>
-        <input type="radio" id="q2_1" value="1" name="q2">
-        <input type="radio" id="q2_2" value="2" name="q2">
-        <input type="radio" id="q2_3" value="3" name="q2">
-        <input type="radio" id="q2_4" value="4" name="q2">
-        <input type="radio" id="q2_5" value="5" name="q2">
-        <input type="radio" id="q2_6" value="6" name="q2">
-        <input type="radio" id="q2_7" value="7" name="q2">
-      </li>
-      <br>
-      <li>
-        <span id="question3"></span>
-        <input type="radio" id="q3_1" value="1" name="q3">
-        <input type="radio" id="q3_2" value="2" name="q3">
-        <input type="radio" id="q3_3" value="3" name="q3">
-        <input type="radio" id="q3_4" value="4" name="q3">
-        <input type="radio" id="q3_5" value="5" name="q3">
-        <input type="radio" id="q3_6" value="6" name="q3">
-        <input type="radio" id="q3_7" value="7" name="q3">
-      </li>
-    </ul>
+</div>
 
-    <button></button>
+<button type="button" id="nextPage">Дальше</button>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<!-- You can also require other files to run in this process -->
+<script src="./renderer.js"></script>
+</body>
 </html>
