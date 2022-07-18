@@ -70,7 +70,7 @@ nextPageBtn.onclick = function () {
     } else if (currentQuestionId === 0) {
         startTime = Date.now();
         questionText.innerText = questions[currentQuestionId];
-        properties = propertiesByQuestions[currentQuestionId];
+        let properties = propertiesByQuestions[currentQuestionId];
         for (let i = 1; i <= 7; i++) {
             document.getElementById(`question${i}`).innerText = properties[i - 1];
         }
@@ -91,7 +91,7 @@ nextPageBtn.onclick = function () {
             getResults();
 
             questionText.innerText = questions[currentQuestionId];
-            properties = propertiesByQuestions[currentQuestionId];
+            let properties = propertiesByQuestions[currentQuestionId];
             for (let i = 1; i <= 7; i++) {
                 document.getElementById(`question${i}`).innerText = properties[i - 1];
             }
