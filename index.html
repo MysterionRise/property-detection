@@ -1,191 +1,213 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
     <title>Тест</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div id="instruction">
-    <h3>Инструкция</h3>
-    <br>
-    Вам будет предъявлено краткое описание новых плодов и перечень признаков, которыми они могут обладать. Ваша задача - оценить степень выраженности этих признаков для каждого плода по шкале от 1 до 7, где
-    <br>
-    1 – признак слабо выражен;
-    7 – признак сильно выражен.
-    <br>
-    Плод, который предстоит оценить, будет описан через его форму и цвет (без предъявления изображения или названия; Вам нужно будет вспомнить остальные его признаки самостоятельно).
-    <br>
-    <i>Например:</i>
-    <br>
-    <img src="fruit.jpg" align="left" width="200px"><p>Оцените выраженность следующих признаков в отношении вытянутого желто-оранжевого плода (в примере мы напоминаем Вам, как выглядит плод. При выполнении задания изображений плодов не будет!):
-</p>
-    <br>
-    <br>
-    <table>
+  </head>
+  <body>
+    <div id="instruction">
+      <h3>Инструкция</h3>
+      <br />
+      Вам будет предъявлено краткое описание новых плодов и перечень признаков,
+      которыми они могут обладать. Ваша задача - оценить степень выраженности
+      этих признаков для каждого плода по шкале от 1 до 7, где
+      <br />
+      1 – признак слабо выражен; 7 – признак сильно выражен.
+      <br />
+      Плод, который предстоит оценить, будет описан через его форму и цвет (без
+      предъявления изображения или названия; Вам нужно будет вспомнить остальные
+      его признаки самостоятельно).
+      <br />
+      <i>Например:</i>
+      <br />
+      <img src="fruit.jpg" align="left" width="200px" />
+      <p>
+        Оцените выраженность следующих признаков в отношении вытянутого
+        желто-оранжевого плода (в примере мы напоминаем Вам, как выглядит плод.
+        При выполнении задания изображений плодов не будет!):
+      </p>
+      <br />
+      <br />
+      <table>
         <tr>
-            <td>Бугристый</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td><u><b>7</b></u></td>
+          <td>Бугристый</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>
+            <u><b>7</b></u>
+          </td>
         </tr>
         <tr>
-            <td>Сморщенный</td>
-            <td>1</td>
-            <td><u><b>2</b></u></td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
+          <td>Сморщенный</td>
+          <td>1</td>
+          <td>
+            <u><b>2</b></u>
+          </td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
         </tr>
         <tr>
-            <td>Изогнутый</td>
-            <td>1</td>
-            <td><u><b>2</b></u></td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
+          <td>Изогнутый</td>
+          <td>1</td>
+          <td>
+            <u><b>2</b></u>
+          </td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
         </tr>
         <tr>
-            <td>Твердый</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td><u><b>6</b></u></td>
-            <td>7</td>
+          <td>Твердый</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>
+            <u><b>6</b></u>
+          </td>
+          <td>7</td>
         </tr>
         <tr>
-            <td>Пестрый</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td><u><b>5</b></u></td>
-            <td>6</td>
-            <td>7</td>
+          <td>Пестрый</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>
+            <u><b>5</b></u>
+          </td>
+          <td>6</td>
+          <td>7</td>
         </tr>
         <tr>
-            <td>Ворсистый</td>
-            <td><u><b>1</b></u></td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
+          <td>Ворсистый</td>
+          <td>
+            <u><b>1</b></u>
+          </td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
         </tr>
-    </table>
+      </table>
 
-    <br>
-    <br>
-    Для выбора ответа используйте компьютерную мышь. Для перехода к следующему заданию необходимо будет нажимать клавишу ДАЛЕЕ.
-    <br>
-    Время выполнения каждого задания ограничено. Старайтесь отвечать как можно быстрее.
-    <br>
-    Если Вы готовы, нажмите клавишу СТАРТ.
+      <br />
+      <br />
+      Для выбора ответа используйте компьютерную мышь. Для перехода к следующему
+      заданию необходимо будет нажимать клавишу ДАЛЕЕ.
+      <br />
+      Время выполнения каждого задания ограничено. Старайтесь отвечать как можно
+      быстрее.
+      <br />
+      Если Вы готовы, нажмите клавишу СТАРТ.
+    </div>
+    <h3 id="questionText"></h3>
+    <div id="questionnaire" hidden>
+      <table>
+        <tr>
+          <th></th>
+          <th>1 (слабо выражен)</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7 (сильно выражен)</th>
+        </tr>
+        <tr>
+          <td><span id="question1" /></td>
+          <td><input type="radio" id="q1_1" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_2" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_3" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_4" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_5" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_6" value="1" name="q1" /></td>
+          <td><input type="radio" id="q1_7" value="1" name="q1" /></td>
+        </tr>
+        <tr>
+          <td><span id="question2" /></td>
+          <td><input type="radio" id="q2_1" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_2" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_3" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_4" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_5" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_6" value="1" name="q2" /></td>
+          <td><input type="radio" id="q2_7" value="1" name="q2" /></td>
+        </tr>
+        <tr>
+          <td><span id="question3" /></td>
+          <td><input type="radio" id="q3_1" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_2" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_3" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_4" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_5" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_6" value="1" name="q3" /></td>
+          <td><input type="radio" id="q3_7" value="1" name="q3" /></td>
+        </tr>
+        <tr>
+          <td><span id="question4" /></td>
+          <td><input type="radio" id="q4_1" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_2" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_3" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_4" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_5" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_6" value="1" name="q4" /></td>
+          <td><input type="radio" id="q4_7" value="1" name="q4" /></td>
+        </tr>
+        <tr>
+          <td><span id="question5" /></td>
+          <td><input type="radio" id="q5_1" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_2" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_3" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_4" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_5" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_6" value="1" name="q5" /></td>
+          <td><input type="radio" id="q5_7" value="1" name="q5" /></td>
+        </tr>
+        <tr>
+          <td><span id="question6" /></td>
+          <td><input type="radio" id="q6_1" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_2" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_3" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_4" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_5" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_6" value="1" name="q6" /></td>
+          <td><input type="radio" id="q6_7" value="1" name="q6" /></td>
+        </tr>
+        <tr>
+          <td><span id="question7" /></td>
+          <td><input type="radio" id="q7_1" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_2" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_3" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_4" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_5" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_6" value="1" name="q7" /></td>
+          <td><input type="radio" id="q7_7" value="1" name="q7" /></td>
+        </tr>
+      </table>
+    </div>
 
-</div>
-<h3 id="questionText"></h3>
-<div id="questionnaire" hidden>
-    <table>
-        <tr>
-            <th></th>
-            <th>1 (слабо выражен)</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7 (сильно выражен)</th>
-        </tr>
-        <tr>
-            <td><span id="question1"/></td>
-            <td><input type="radio" id="q1_1" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_2" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_3" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_4" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_5" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_6" value="1" name="q1"></td>
-            <td><input type="radio" id="q1_7" value="1" name="q1"></td>
-        </tr>
-        <tr>
-            <td><span id="question2"/></td>
-            <td><input type="radio" id="q2_1" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_2" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_3" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_4" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_5" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_6" value="1" name="q2"></td>
-            <td><input type="radio" id="q2_7" value="1" name="q2"></td>
-        </tr>
-        <tr>
-            <td><span id="question3"/></td>
-            <td><input type="radio" id="q3_1" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_2" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_3" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_4" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_5" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_6" value="1" name="q3"></td>
-            <td><input type="radio" id="q3_7" value="1" name="q3"></td>
-        </tr>
-        <tr>
-            <td><span id="question4"/></td>
-            <td><input type="radio" id="q4_1" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_2" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_3" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_4" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_5" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_6" value="1" name="q4"></td>
-            <td><input type="radio" id="q4_7" value="1" name="q4"></td>
-        </tr>
-        <tr>
-            <td><span id="question5"/></td>
-            <td><input type="radio" id="q5_1" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_2" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_3" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_4" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_5" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_6" value="1" name="q5"></td>
-            <td><input type="radio" id="q5_7" value="1" name="q5"></td>
-        </tr>
-        <tr>
-            <td><span id="question6"/></td>
-            <td><input type="radio" id="q6_1" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_2" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_3" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_4" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_5" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_6" value="1" name="q6"></td>
-            <td><input type="radio" id="q6_7" value="1" name="q6"></td>
-        </tr>
-        <tr>
-            <td><span id="question7"/></td>
-            <td><input type="radio" id="q7_1" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_2" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_3" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_4" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_5" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_6" value="1" name="q7"></td>
-            <td><input type="radio" id="q7_7" value="1" name="q7"></td>
-        </tr>
-    </table>
+    <button type="button" id="nextPage">Старт</button>
 
-</div>
-
-<button type="button" id="nextPage">Старт</button>
-
-<!-- You can also require other files to run in this process -->
-<script src="./renderer.js"></script>
-</body>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
 </html>

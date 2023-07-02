@@ -7,11 +7,11 @@
 /*}*/
 
 table {
-    table-layout: fixed;
-    width: 100% ;
+  table-layout: fixed;
+  width: 100%;
 }
 
 td {
-    width: 12.5% ;
-    text-align: center;
+  width: 12.5%;
+  text-align: center;
 }
